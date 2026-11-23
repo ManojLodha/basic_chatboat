@@ -1,4 +1,4 @@
-from src.state import State
+from src.state.state import State
 
 class BasicChatboatnode:
 
@@ -9,4 +9,4 @@ class BasicChatboatnode:
         """
         Processes the input state and generates a chatboat response.
         """
-        return {"message":self.llm.invoke(state['message'])}
+        return {"messages":self.llm.invoke(state['messages'])}

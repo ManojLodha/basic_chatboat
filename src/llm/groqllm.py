@@ -1,4 +1,3 @@
-
 import os
 from dotenv import load_dotenv
 from langchain_groq import ChatGroq
@@ -20,17 +19,15 @@ class GroqLLM:
             # Get selected model from user input
             selected_model = self.user_input_control.get(
                 "selected_model",
-                "llama-3.1-8b-instant"
+                "openai/gpt-oss-20b"
             )
 
             # Validate inputs
             if not groq_api_key:
                 raise ValueError("Groq API key is missing.")
-                print("Groq API key is missing. Please set it in the .env file.")
 
             if not selected_model:
                 raise ValueError("Please select an LLM model.")
-                print("Please select an LLM model.")
 
             # Initialize Groq LLM
             llm = ChatGroq(
@@ -42,4 +39,3 @@ class GroqLLM:
 
         except Exception as e:
             raise ValueError(f"Error initializing Groq LLM: {e}") from e
-            print("Error initializing Groq LLM:", e)
