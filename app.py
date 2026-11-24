@@ -17,7 +17,7 @@ load_dotenv()
 # --------------------------------
 
 st.set_page_config(
-    page_title="AI Chatbot",
+    page_title="Hi...., I'm Chiti",
     page_icon="🤖",
     layout="centered"
 )
