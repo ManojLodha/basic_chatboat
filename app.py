@@ -91,7 +91,7 @@ with st.sidebar:
 # Main Chat Interface
 # --------------------------------
 
-st.title("💬 AI Chatbot")
+st.title("💬 Hi...., I'm Chiti")
 
 st.caption("Ask me anything. I'm here to help!")
 
